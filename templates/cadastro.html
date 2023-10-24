@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cadastro de Médicos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/css/cadastro.css">
+</head>
+
+<body>
+    <div class="container-geral">
+        <!-- <div class="background"></div> -->
+        <div class="background-left">
+            <div class="container-logo-copy">
+                <div class="icon-header">
+                    <a href="/">
+                        <img src="../static/forhealth_logo.svg" alt="Seu SVG">
+                    </a>
+                </div>
+                <div>
+                    <p class="copy-left">For</p>
+                    <p class="copy-left">your</p>
+                    <p style="color: #148FCF" class="copy-left">Health.</p>
+                </div>
+            </div>
+            <div class="footer-img">
+                <img src="../static/doctors.svg" alt="footer-doctors">
+            </div>
+        </div>
+        <div class="login">
+            <div class="login-container">
+                <div class="header-signup">
+                    <img src="../static/forhealth_logo.svg" alt="Seu SVG" width="120px">
+                    <h2>Cadastro de Profissional</h2>
+                </div>
+                <form class="signup-form" method="POST">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="sobrenome">Sobrenome:</label>
+                        <input type="text" id="sobrenome" name="sobrenome">
+                    </div>
+                    <div class="form-group">
+                        <label for="crm">CRM:</label>
+                        <input type="text" id="crm" name="crm">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password" name="password"></input>
+                    </div>
+
+                    <button class="login-button" type="submit" value="Enviar">Criar Conta</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Consulta</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../static/css/consulta.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fontsource-inter@4.22.0/index.css">
+</head>
+
+<body>
+  <div class="background">
+    <div class="background-Logo">
+      <div class="background-Logo-group">
+        <img src="../static/forhealth_logo.svg" alt="Seu SVG" width="197px">
+        <h1>For your <span>Health.</span></h1>
+      </div>
+    </div>
+    <div class="background-Form">
+      <div class="footer-img">
+        <img src="../static/doctors.svg" alt="footer-doctors">
+      </div>
+      <div class="login-container">
+        <div class="form-header">
+          <img src="../static/forhealth_logo.svg" alt="Seu SVG" width="120px">
+          <h2>Consulta</h2>
+          <h4>Dados Pessoais</h4>
+        </div>
+        <form class="signup-form" method="POST">
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+          </div>
+          <div class="form-group">
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome">
+          </div>
+          <div class="form-group">
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf">
+          </div>
+          <div class="form-group-date">
+            <div class="form-group">
+              <label for="data_de_nascimento">Data de Nascimento:</label>
+              <input type="text" id="data_de_nascimento" name="data_de_nascimento">
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="text" id="email" name="email">
+            </div>
+            <div class="form-group">
+              <label for="bairro">Bairro:</label>
+              <input type="text" id="bairro" name="bairro">
+            </div>
+          </div>
+          <div class="form-group-wh">
+            <div class="form-group-weight">
+              <label for="peso">Peso:</label>
+              <input type="number" id="peso" name="peso"></input>
+            </div>
+            <div class="form-group-height">
+              <label for="altura">Altura:</label>
+              <input type="number" id="altura" name="altura"></input>
+            </div>
+          </div>
+          <div class="form-group blood">
+            <label htmlFor="tipo_sanguineo">
+              Tipo Sanguíneo:
+            </label>
+            <select id="tipo_sanguineo" name="tipo_sanguineo" autoComplete="tipo_sanguineo" defaultValue='--'>
+              <option value='--'>--</option>
+              <option value='A+'>A+</option>
+              <option value='A-'>A-</option>
+              <option value='B+'>B+</option>
+              <option value='B-'>B-</option>
+              <option value='AB+'>AB+</option>
+              <option value='AB-'>AB-</option>
+              <option value='0+'>O+</option>
+              <option value='0-'>O-</option>
+            </select>
+          </div>
+
+          <h4 class="second-subtitle">Dados da Consulta</h4>
+          <div class="form-group">
+            <label for="alergias">Alergias:</label>
+            <input type="textarea" id="alergias" name="alergias" resize="none">
+          </div>
+          <div class="form-group">
+            <label for="antecedentes_pessoais">Antecedentes pessoais:</label>
+            <input type="textarea" id="antecedentes_pessoais" name="antecedentes_pessoais" resize="none">
+          </div>
+          <div class="form-group">
+            <label for="cirurgias_previas">Cirurgias Prévias:</label>
+            <input type="textarea" id="cirurgias_previas" name="cirurgias_previas" resize="none">
+          </div>
+          <div class="form-group">
+            <label for="antecedentes_ginecologicos">Antecedentes Ginecológicos:</label>
+            <input type="textarea" id="antecedentes_ginecologicos" name="antecedentes_ginecologicos" resize="none">
+          </div>
+          <div class="form-group">
+            <label for="doencas_cronicas">Doenças cronicas:</label>
+            <input type="textarea" id="doencas_cronicas" name="doencas_cronicas" resize="none">
+          </div>
+          <div class="form-group">
+            <label for="exame_fisico">Exame Físico:</label>
+            <input type="textarea" id="exame_fisico" name="exame_fisico" resize="none">
+          </div>
+          <div class="form-group">
+            <label for="queixa_principal">Queixa Principal:</label>
+            <input type="textarea" id="queixa_principal" name="queixa_principal" resize="none">
+          </div>
+          <div class="form-group">
+            <label for="hda">HDA:</label>
+            <input type="textarea" id="hda" name="hda" resize="none">
+          </div>
+          <div class="form-group">
+            <label for="medicacoes_em_uso">Medicações em uso:</label>
+            <input type="textarea" id="medicacoes_em_uso" name="medicacoes_em_uso" resize="none">
+          </div>
+          <div class="form-group">
+            <label for="hipotese">Hipótese:</label>
+            <input type="textarea" id="hipotese" name="hipotese" resize="none">
+          </div>
+          <div class="form-group">
+            <label for="prescricao">Prescrição:</label>
+            <input type="textarea" id="prescricao" name="prescricao" resize="none">
+          </div>
+          <div class="form-group checkbox">
+            <label for="exame">Exame:</label>
+            <input type="checkbox" id="exame" name="exame" />
+          </div>
+          <!-- <div class="form-group">
+            <label for="data_de_validade_da_prescricao">Data de validade da prescrição:</label>
+            <input type="textarea" id="data_de_validade_da_prescricao" name="data_de_validade_da_prescricao" resize="none">
+          </div> -->
+          <div class="btn">
+            <button class="login-button" type="submit" value="Enviar">Finalizar Consulta</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
