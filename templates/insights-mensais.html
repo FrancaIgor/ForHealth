@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ForHealth Dashboard Mensal</title>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../static/css/dynamic.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fontsource-inter@4.22.0/index.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="header">
+        <img src="../static/forhealth_logo.svg" alt="Seu SVG" width="197px">
+        <h2>Dashboard Mensal</h2>
+      </div>
+      <div class="select">
+        <div>
+          <label for="month-dropdown">Selecione um mês:</label>
+          <select id="month-dropdown" name="month">
+            {% for month in unique_months %}
+            <option value="{{ month }}" {% if month==selected_month %}selected{% endif %}>{{ month }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <span class="btn"><a href="/insights-anuais">Visualização Anual</a></span>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column">
+        <div class="graphic" id="plotly-chart1">
+          {{ plot_div1|safe }}
+        </div>
+        <div class="graphic" id="plotly-chart2">
+          {{ plot_div2|safe }}
+        </div>
+        <div class="graphic" id="plotly-chart3">
+          {{ plot_div3|safe }}
+        </div>
+      </div>
+      <div class="column">
+        <div class="graphic" id="plotly-chart4">
+          {{ plot_div4|safe }}
+        </div>
+        <div class="graphic" id="plotly-chart5">
+          {{ plot_div5|safe }}
+        </div>
+        <div class="graphic" id="plotly-chart6">
+          {{ plot_div6|safe }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function () {
+      $('#month-dropdown').change(function () {
+        var selectedMonth = $('#month-dropdown').val();
+        window.location.href = '/monthly-insights?month=' + selectedMonth;
+      });
+    });
+  </script>
+</body>
+
+</html>
