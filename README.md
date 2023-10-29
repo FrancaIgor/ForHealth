@@ -10,3 +10,4 @@ A aplicação ForHealth oferece uma interface intuitiva, projetada com o objetiv
 - [Pandas](https://pandas.pydata.org/docs/index.html)
 - [Dash](https://dash.plotly.com/?_gl=1*1mmc17g*_ga*MTU4NzUyMTcuMTY5Nzc1OTM3NA..*_ga_6G7EE0JNSC*MTY5ODEzNzUwOC4xMi4xLjE2OTgxMzc1MTguNTAuMC4w)
 - [Plotly](https://plotly.com/python/)
+- [Faker](https://faker.readthedocs.io/en/master/)
