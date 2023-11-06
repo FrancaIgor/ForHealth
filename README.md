@@ -15,6 +15,6 @@ A aplicação ForHealth oferece uma interface intuitiva, projetada com o objetiv
 
 ### Rodando a Aplicação
 
-Basta rodar o comando *pip install requirements.txt*. E em seguida rodar no termianl o *python main*.
+Basta utilizar o comando *pip install requirements.txt*. E em seguida rodar no termianl o *python main*.
 Com a aplicação funcionando o mesmo agora basta acessar a url: **http://127.0.0.1:5000/**
 
